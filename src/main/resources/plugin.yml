@@ -18,3 +18,5 @@ permissions:
                 description: gives number of players on server
             plugin.heal:
                 description: heals player to full health
+            plugin.sleep:
+                description: teleports player to spawn point

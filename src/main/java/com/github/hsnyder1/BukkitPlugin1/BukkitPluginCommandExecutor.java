@@ -49,6 +49,16 @@ private final BukkitPlugin1 plugin;
 			p.setHealth(p.getMaxHealth());
 			return true;
 		}
+		else if(args[0].equalsIgnoreCase("sleep")) {
+			Player p = (Player) sender;
+			if(p.getBedSpawnLocation() != null) {
+				p.teleport(p.getBedSpawnLocation());
+			}
+			else {
+				p.sendMessage("You do not have a Bed Spawn Location!");
+			}
+			return true;
+		}
 		else {
 			return false;
 		}
